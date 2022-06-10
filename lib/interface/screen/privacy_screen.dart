@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:new_gradient_app_bar/new_gradient_app_bar.dart';
 import 'package:scontree/assets.dart';
+import 'package:scontree/interface/screen/insert_card_screen.dart';
 import 'package:scontree/references.dart';
 
 class PrivacyScreen extends StatelessWidget {
@@ -30,7 +31,9 @@ class PrivacyScreen extends StatelessWidget {
           """),
         ElevatedButton(
           child: Text("Ho letto e accetto"),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pushReplacementNamed(InsertCardScreen.route);
+          },
         ),
       ],
     );

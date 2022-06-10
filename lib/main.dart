@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:scontree/interface/screen/home_screen.dart';
+import 'package:scontree/interface/screen/insert_card_screen.dart';
 import 'package:scontree/interface/screen/login_screen.dart';
 import 'package:scontree/interface/screen/privacy_screen.dart';
 import 'package:scontree/references.dart';
@@ -29,7 +30,6 @@ class Scontree extends StatelessWidget {
             textStyle: MaterialStateProperty.all<TextStyle>(
               TextStyle(
                 fontSize: 24.0,
-                fontWeight: FontWeight.bold,
                 fontFamily: "Calibri",
               ),
             ),
@@ -44,6 +44,7 @@ class Scontree extends StatelessWidget {
         LoginScreen.route: (BuildContext context) => LoginScreen(),
         HomeScreen.route: (BuildContext context) => HomeScreen(),
         PrivacyScreen.route: (BuildContext context) => PrivacyScreen(),
+        InsertCardScreen.route: (BuildContext context) => InsertCardScreen(),
       },
     );
   }
