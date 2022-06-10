@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:scontree/interface/screen/home_screen.dart';
 import 'package:scontree/interface/screen/login_screen.dart';
+import 'package:scontree/interface/screen/privacy_screen.dart';
 import 'package:scontree/references.dart';
 import 'package:swatcher/swatcher.dart';
 
@@ -16,6 +17,7 @@ class Scontree extends StatelessWidget {
     return MaterialApp(
       title: References.appName,
       theme: ThemeData(
+        fontFamily: "Calibri",
         primarySwatch: Swatcher.createMaterialColor(References.primaryColor),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
@@ -27,6 +29,8 @@ class Scontree extends StatelessWidget {
             textStyle: MaterialStateProperty.all<TextStyle>(
               TextStyle(
                 fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+                fontFamily: "Calibri",
               ),
             ),
             padding: MaterialStateProperty.all<EdgeInsets>(
@@ -37,8 +41,9 @@ class Scontree extends StatelessWidget {
       ),
       initialRoute: LoginScreen.route,
       routes: <String, Widget Function(BuildContext)>{
-        LoginScreen.route: (context) => LoginScreen(),
-        HomeScreen.route: (context) => HomeScreen(),
+        LoginScreen.route: (BuildContext context) => LoginScreen(),
+        HomeScreen.route: (BuildContext context) => HomeScreen(),
+        PrivacyScreen.route: (BuildContext context) => PrivacyScreen(),
       },
     );
   }

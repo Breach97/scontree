@@ -19,6 +19,7 @@ dependencies:
   cupertino_icons: ^1.0.5
   font_awesome_flutter: ^10.1.0
   swatcher: ^0.1.0
+  new_gradient_app_bar: ^0.2.0
 
 dev_dependencies:
   flutter_test:
@@ -36,3 +37,10 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+
+  fonts:
+    - family: Calibri
+      fonts:
+        - asset: assets/fonts/Calibri-Regular.ttf
+        - asset: assets/fonts/Calibri-Bold.ttf
+          weight: 700

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:scontree/assets.dart';
+import 'package:scontree/interface/screen/privacy_screen.dart';
 import 'package:scontree/interface/widget/gradient_text.dart';
 import 'package:scontree/references.dart';
 
@@ -59,7 +60,9 @@ class LoginScreen extends StatelessWidget {
             Spacer(),
             ElevatedButton(
               child: Text("Accedi"),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushReplacementNamed(PrivacyScreen.route);
+              },
             ),
           ],
         ),
