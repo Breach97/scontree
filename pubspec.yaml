@@ -15,7 +15,10 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Grafica
   cupertino_icons: ^1.0.5
+  font_awesome_flutter: ^10.1.0
+  swatcher: ^0.1.0
 
 dev_dependencies:
   flutter_test:
